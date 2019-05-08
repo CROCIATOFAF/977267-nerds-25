@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Давид Сешар](https://up.htmlacademy.ru/htmlcss/25/user/977267).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
