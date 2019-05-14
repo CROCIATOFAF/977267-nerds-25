@@ -1,121 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-    <a class="main-header-logo">
-    <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина «Nёrds»">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="studio.html">Студия</a></li>
-      <li><a href="clients.html">Клиенты</a></li>
-      <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <ul class="user-basket">
-      <li><a href="basket.html">Корзина</a></li>
-    </ul>
-        </nav>
-      </header>
-      <main class="container">
-        <h1 class="page-title">Магазин готовых шаблонов «Nёrds»</h1>
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
-        <h3 class="grid-title">Сетка:</h3>
-        <ul class="grid-type">Сетка:
-        <li>Адаптивная</li>
-        <li>Фиксированная</li>
-        <li>Резиновая</li>
+<body>
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="shop.html">
+        <img src="img/index-logo.svg" width="368" height="153" alt="логотип магазина «nёrds»">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">студия</a></li>
+        <li><a href="clients.html">клиенты</a></li>
+        <li class="site-navigation-current">магазин</li>
+        <li><a href="contacts.html">контакты</a></li>
+      </ul>
+      <ul class="user-basket">
+        <li><a href="basket.html">корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">магазин готовых шаблонов «nёrds»</h1>
+
+    <section>
+      <h3 class="filter-title">сетка:</h3>
+      <ul class="filter-button">
+        <li>адаптивная</li>
+        <li>фиксированная</li>
+        <li>резиновая</li>
       </ul>
 
+      <h3 class="filter-title">особенности:</h3>
+      <ul class="filter-button">
+        <li>слайдер</li>
+        <li>блок преимуществ</li>
+        <li>новости</li>
+        <li>галерея</li>
+        <li>корзина</li>
+        <a class="show-button" href="#">Показать</a>
+      </ul>
+    </section>
 
-      <h3 class="features-title">Особенности:</h3>
-      <ul class="features-select">
-      <li>Слайдер</li>
-      <li>Блок преимуществ</li>
-      <li>Новости</li>
-      <li>Галерея</li>
-      <li>Корзина</li>
-    </ul>
+    <section class="catalog">
+      <h2 class="visually-hidden">список готовых шаблонов</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <img src="img/sedona.jpg" width="220" height="165" alt="шаблон «sedona»">
+          <div>
+            <h3>SEDONA</h3>
+            <p>Информационный сайт<br> для туристов</p>
+            <a class="price-button" href=#>9 900 РУБ.</a>
+          </div>
+        </li>
+
+        <li class=" catalog-item">
+          <img src="img/pink.jpg" width="220" height="165" alt="шаблон «pink»">
+          <div>
+            <h3>PINK APP</h3>
+            <p>Продуктовый лендинг<br> приложения для IOS и Android</p>
+            <a class="price-button" href=#>9 900 РУБ.</a>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <img src="img/borodinski.jpg" width="220" height="165" alt="шаблон «borodinski»">
+          <div>
+            <h3>BARBERSHOP</h3>
+            <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+            <a class="price-button" href=#>9 900 РУБ.</a>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <img src="img/mishka.jpg" width="220" height="165" alt="шаблон «mishka»">
+          <div>
+            <h3>MISHKA</h3>
+            <p>Интернет-магазин <br> вязаных игрушек</p>
+            <a class="price-button" href=#>9 900 РУБ.</a>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <img src="img/aplus.jpg" width="220" height="165" alt="шаблон «a plus»">
+          <div>
+            <h3>A PLUS</h3>
+            <p>Лендинг курсов повышения <br> квалификации<br></p>
+            <a class="price-button" href=#>9 900 РУБ.</a>
+          </div>
+        </li>
+
+        <li class="catalog-item">
+          <img src="img/kvast.jpg" width="220" height="165" alt="шаблон «кваст»">
+          <div>
+            <h3>Кваст</h3>
+            <p>Промо-сайт производителя <br> крафтового кваса</p>
+            <a class="price-button" href=#>9 900 РУБ.</a>
+          </div>
+        </li>
       </ul>
 
-      <section class="catalog">
-        <h2 class="visually-hidden">Список готовых шаблонов</h2>
-        <ul class="catalog-list">
+      <ul class="pagination-list">
+        <li class="pagination-item"><a href="#">1</a></li>
+        <li class="pagination-item pagination-item-current"><a>2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">4</a></li>
+      </ul>
 
-          <li class="catalog-item">
-            <h3>Шаблон «Sedona»</h3>
-            <a href="catalog-item.html">Шаблон «Sedona»</a>
-            <p>
-              <img src="img/sedona.jpg" width="220" height="165" alt=Шаблон «Sedona»>
-            </p>
-          </li>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#"><img src="img/index-logo.svg" width="368" height="153" alt="логотип vkontakte"></a></li>
+        <li><a class="social-button" href="#"><img src="img/index-logo.svg" width="368" height="153" alt="логотип facebook"></a></li>
+        <li><a class="social-button" href="#"><img src="img/index-logo.svg" width="368" height="153" alt="логотип instagram"></a></li>
+      </ul>
+    </div>
+    <h2>давайте дружить, это выгодно!</h2>
+    <p>скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+</body>
 
-          <li class="catalog-item">
-            <h3>Шаблон «Pink»</h3>
-            <a href="catalog-item.html">Шаблон «Pink»</a>
-            <p>
-              <img src="img/pink.jpg" width="220" height="165" alt=Шаблон «Pink»>
-            </p>
-          </li>
-
-          <li class="catalog-item">
-            <h3>Шаблон «Borodinski»</h3>
-            <a href="catalog-item.html">Шаблон «Borodinski»</a>
-            <p>
-              <img src="img/borodinski.jpg" width="220" height="165" alt=Шаблон «Borodinski»>
-            </p>
-          </li>
-
-          <li class="catalog-item">
-            <h3>Шаблон «Mishka»</h3>
-            <a href="catalog-item.html">Шаблон «Mishka»</a>
-            <p>
-              <img src="img/mishka.jpg" width="220" height="165" alt=Шаблон «Mishka»>
-            </p>
-          </li>
-
-          <li class="catalog-item">
-            <h3>Шаблон «A Plus»</h3>
-            <a href="catalog-item.html">«A Plus»</a>
-            <p>
-              <img src="img/aplus.jpg" width="220" height="165" alt=Шаблон «A Plus»>
-            </p>
-          </li>
-
-          <li class="catalog-item">
-            <h3>Шаблон «Кваст»</h3>
-            <a href="catalog-item.html">Шаблон «Кваст»</a>
-            <p>
-              <img src="img/kvast.jpg" width="220" height="165" alt=Шаблон «Кваст»>
-            </p>
-          </li>
-        </ul>
-
-        <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-        </ul>
-
-      </section>
-      </main>
-
-      <footer>
-      <div class="footer-social">
-      <a class="social-button" href="#"><img src="img/index-logo.svg" width="368" height="153" alt="Логотип vkontakte"></a>
-      <a class="social-button" href="#"><img src="img/index-logo.svg" width="368" height="153" alt="Логотип facebook"></a>
-      <a class="social-button" href="#"><img src="img/index-logo.svg" width="368" height="153" alt="Логотип instagram"></a>
-      </div>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </footer>
-
-
-    </body>
 </html>
