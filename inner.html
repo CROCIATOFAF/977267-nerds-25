@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -21,33 +20,41 @@
         <li><a href="contacts.html">контакты</a></li>
       </ul>
       <ul class="user-basket">
-        <li><a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки"></a></li>
-        <li><a href="basket.html">корзина</a></li>
+        <li><a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки">Корзина</a></li>
       </ul>
     </nav>
   </header>
-
   <main class="container">
-    <h1 class="page-title">магазин готовых шаблонов «nёrds»</h1>
-
+    <h1 class="page-title">Магазин готовых шаблонов «nёrds»</h1>
     <section>
+
       <h3 class="filter-title">сетка:</h3>
       <ul class="filters-list">
-        <li>адаптивная</li>
-        <li>фиксированная</li>
-        <li>резиновая</li>
+        <li>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">адаптивная</label>
+        </li>
+        <li>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed"><label for="filter-fixed">фиксированная</label>
+        </li>
+        <li>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber"><label for="filter-rubber">резиновая</label>
+        </li>
       </ul>
 
       <h3 class="filter-title">особенности:</h3>
       <ul class="filters-list">
-        <li>слайдер</li>
-        <li>блок преимуществ</li>
-        <li>новости</li>
-        <li>галерея</li>
-        <li>корзина</li>
+        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-baxter-of-california" checked><label for="filter-slider">слайдер</label>
+        </li>
+        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-baxter-of-california" ><label for="filter-advantages">блок преимуществ</label>
+        </li>
+        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-baxter-of-california" checked><label for="filter-news">новости</label>
+        </li>
+        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-baxter-of-california"><label for="filter-gallery">галерея</label>
+        </li>
+        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-baxter-of-california"><label for="filter-basket">корзина</label>
+        </li>
       </ul>
       <a class="show-button" href="#">Показать</a>
-
     </section>
 
     <section class="catalog">
@@ -114,7 +121,30 @@
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
       </ul>
+    </section>
 
+    <section class="write-us">
+      <h2>Напишите нам</h2>
+      <form class="write-us-form" action="index.html" method="post">
+        <p>
+          <label class="login" for="user-login">Ваше имя</label>
+          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" required>
+        </p>
+        <p>
+          <label for="letter">Текст письма</label>
+          <textarea id="letter" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">
+          Отправить
+        </button>
+      </form>
+      <button class="modal-close" type="button">
+        Закрыть
+      </button>
     </section>
   </main>
   <footer>
