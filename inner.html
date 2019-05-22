@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
-<body>
+<body class= "inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -23,35 +25,46 @@
         <li><a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки">Корзина</a></li>
       </ul>
     </nav>
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
   <main class="container">
-    <h1 class="page-title">Магазин готовых шаблонов «nёrds»</h1>
+
     <section>
 
       <h3 class="filter-title">сетка:</h3>
       <ul class="filters-list">
         <li>
-          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">адаптивная</label>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label>
         </li>
         <li>
-          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed"><label for="filter-fixed">фиксированная</label>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label>
         </li>
         <li>
-          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber"><label for="filter-rubber">резиновая</label>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber"><label for="filter-rubber">Резиновая</label>
         </li>
       </ul>
 
       <h3 class="filter-title">особенности:</h3>
       <ul class="filters-list">
-        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-baxter-of-california" checked><label for="filter-slider">слайдер</label>
+        <li>
+          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-baxter-of-california" checked>
+          <label for="filter-slider">Слайдер</label>
         </li>
-        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-baxter-of-california" ><label for="filter-advantages">блок преимуществ</label>
+        <li>
+          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-baxter-of-california">
+          <label for="filter-advantages">Блок преимуществ</label>
         </li>
-        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-baxter-of-california" checked><label for="filter-news">новости</label>
+        <li>
+          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-baxter-of-california" checked>
+          <label for="filter-news">Новости</label>
         </li>
-        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-baxter-of-california"><label for="filter-gallery">галерея</label>
+        <li>
+          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-baxter-of-california">
+          <label for="filter-gallery">Галерея</label>
         </li>
-        <li> <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-baxter-of-california"><label for="filter-basket">корзина</label>
+        <li>
+          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-baxter-of-california">
+          <label for="filter-basket">Корзина</label>
         </li>
       </ul>
       <a class="show-button" href="#">Показать</a>
@@ -116,11 +129,19 @@
       </ul>
 
       <ul class="pagination-list">
-        <li class="pagination-item"><a href="#">1</a></li>
-        <li class="pagination-item pagination-item-current"><a>2</a></li>
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="#"><a>2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
+        <li class="pagination-item"><a href="#"><a>Следующая</a></li>
       </ul>
+    </section>
+
+
+    <section class="contact-info">
+      <h2>NЁRDS DESIGN STUDIO</h2>
+      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p>тел. +7 (812) 275-75-75</p>
+      <a class="button" href="write-us.html">Напишите нам</a>
     </section>
 
     <section class="write-us">

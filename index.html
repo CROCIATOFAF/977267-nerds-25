@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +22,6 @@
         <li><a href="shop.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
-
       <ul class="user-basket">
         <li><a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки">Корзина</a></li>
       </ul>
@@ -40,19 +41,18 @@
         </li>
 
         <li class="feature-item">
-          <h3>Приложения</h3>
           <img src="img/illustration-2.jpg" width="300" height="146" alt="изображене двух телефонов">
+          <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="button" href="catalog.html">Заказать</a>
         </li>
 
         <li class="feature-item">
-          <h3>Презентации</h3>
           <img src="img/illustration-3.jpg" width="300" height="146" alt="изображение доски для презентаций">
+          <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="button" href="catalog.html">Заказать</a>
         </li>
-
       </ul>
     </section>
 
@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="partners">
 
       <ul>
         <li>
@@ -139,7 +139,7 @@
           <label for="letter">Текст письма</label>
           <textarea id="letter" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">
+        <button class="send-button" type="submit">
           Отправить
         </button>
       </form>
