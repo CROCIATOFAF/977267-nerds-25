@@ -9,10 +9,10 @@
   <link href="css/normalize.css" rel="stylesheet">
 </head>
 
-<body class= "inner-page">
+<body class="inner-page">
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
+      <a class="main-header-logo-inner" href="index.html">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип магазина «nёrds»">
       </a>
       <ul class="site-navigation">
@@ -25,9 +25,9 @@
         <li><a href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки">Корзина</a></li>
       </ul>
     </nav>
-    <h1 class="page-title">Магазин готовых шаблонов</h1>
   </header>
   <main class="container">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
 
     <section>
 
@@ -37,10 +37,10 @@
           <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label>
         </li>
         <li>
-          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed" disabled><label for="filter-fixed">Фиксированная</label>
         </li>
         <li>
-          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber"><label for="filter-rubber">Резиновая</label>
+          <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber" disabled><label for="filter-rubber">Резиновая</label>
         </li>
       </ul>
 
@@ -75,64 +75,64 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон «sedona»">
-          <div>
+          <div style="text-align: center">
             <h3>SEDONA</h3>
             <p>Информационный сайт для туристов</p>
-            <a class="price-button" href="#">9 900 РУБ.</a>
+            <a class="price-button button" href="#">9 900 РУБ.</a>
           </div>
         </li>
 
         <li class="catalog-item">
           <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон «pink»">
-          <div>
+          <div style="text-align: center">
             <h3>PINK APP</h3>
             <p>Продуктовый лендинг приложения для IOS и Android</p>
-            <a class="price-button" href="#">9 900 РУБ.</a>
+            <a class="price-button button" href="#">9 900 РУБ.</a>
           </div>
         </li>
 
         <li class="catalog-item">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон «borodinski»">
-          <div>
+          <div style="text-align: center">
             <h3>BARBERSHOP</h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a class="price-button" href="#">9 900 РУБ.</a>
+            <a class="price-button button" href="#">9 900 РУБ.</a>
           </div>
         </li>
 
         <li class="catalog-item">
           <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон «mishka»">
-          <div>
+          <div style="text-align: center">
             <h3>MISHKA</h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <a class="price-button" href="#">9 900 РУБ.</a>
+            <a class="price-button button" href="#">9 900 РУБ.</a>
           </div>
         </li>
 
         <li class="catalog-item">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон «a plus»">
-          <div>
+          <div style="text-align: center">
             <h3>A PLUS</h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <a class="price-button" href="#">9 900 РУБ.</a>
+            <a class="price-button button" href="#">9 900 РУБ.</a>
           </div>
         </li>
 
         <li class="catalog-item">
           <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон «кваст»">
-          <div>
+          <div style="text-align: center">
             <h3>Кваст</h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="price-button" href="#">9 900 РУБ.</a>
+            <a class="price-button button" href="#">9 900 РУБ.</a>
           </div>
         </li>
       </ul>
 
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#"><a>2</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#"><a>Следующая</a></li>
+        <li class="pagination-item-button button"><a href="#">Следующая</a></li>
       </ul>
     </section>
 
@@ -167,23 +167,34 @@
         Закрыть
       </button>
     </section>
+
+    <section class="map">
+      <h2 class="visually-hidden">
+        Как до нас добраться
+      </h2>
+      <p>
+        <img src="img/map.jpg" width="1725" height="808" alt="Офис компании по адресу 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <img src="img/map-marker.png" width="231" height="190" alt="Маркер с логотипом студии Nёrds">
+      </p>
+    </section>
+
   </main>
-  <footer>
-    <div>
-      <ul class="footer-social">
+  <footer class=social>
+    <div class="footer-social">
+      <ul>
         <li>
-          <a class="social-button" href="#"><img src="img/vk-icon.svg" width="12" height="22" alt="логотип vkontakte"></a>
+          <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="логотип vkontakte"></a>
         </li>
         <li>
           <a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="логотип facebook"></a>
         </li>
         <li>
-          <a class="social-button" href="#"><img src="img/insta-icon.svg" width="12" height="22" alt="логотип instagram"></a>
+          <a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="логотип instagram"></a>
         </li>
       </ul>
     </div>
-    <h2>давайте дружить, это выгодно!</h2>
-    <p>скидка 10% для друзей из социальных сетей.</p>
+    <h2>Давайте дружить, это выгодно!</h2>
+    <p>Cкидка 10% для друзей из социальных сетей.</p>
   </footer>
 </body>
 
