@@ -11,49 +11,45 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <a class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип магазина «Nёrds»">
-          </a>
-          <ul class="site-navigation">
-            <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
-            <li><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
-            <li><a class="site-navigation-link" href="inner.html">Магазин</a></li>
-            <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="user-basket">
-            <li><a class="user-basket-link" href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки">Корзина</a></li>
-          </ul>
-        </div>
-      </div>
+    <nav class="main-navigation container">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип магазина «Nёrds»">
+      </a>
+      <ul class="site-navigation">
+        <li><a class="site-navigation-link" href="studio.html">Студия</a></li>
+        <li><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
+        <li><a class="site-navigation-link" href="inner.html">Магазин</a></li>
+        <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-basket">
+        <li><a class="user-basket-link" href="basket.html"><img src="img/cart-icon.svg" width="15" height="15" alt="иконка тележки">Корзина</a></li>
+      </ul>
     </nav>
   </header>
 
   <main class="container">
     <h1 class="visually-hidden">Магазин готовых шаблонов «Nёrds»</h1>
     <section class="slide-bar">
-      <div>
+      <div class="slide">
         <h2 class="slide-bar-title">Долго, дорого, скрупулезно.</h2>
         <p class="slide-bar-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
         <a class="slider-link button" href="#">Узнать больше</a>
-        <img src="img/slide1.png" width="698" height="413" alt="Картинка с телефонами">
+        <img class="slide-image" src="img/slide1.png" width="698" height="413" alt="Картинка с телефонами">
       </div>
-      <div>
+      <div class="slide visually-hidden">
         <h2 class="slide-bar-title">Любим математику как никто другой.</h2>
         <p class="slide-bar-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
         <a class="slider-link button" href="#">Узнать больше</a>
-        <img src="img/slide2.png" width="663" height="430" alt="Картинка с экранами">
+        <img class="slide-image" src="img/slide2.png" width="663" height="430" alt="Картинка с экранами">
       </div>
-      <div>
+      <div class="slide visually-hidden">
         <h2 class="slide-bar-title">Только ночь, только хардкор.</h2>
         <p class="slide-bar-text">Работать днем, как все? Мы против этого. Ближе к полуночи работ.</p>
         <a class="slider-link button" href="#">Узнать больше</a>
-        <img src="img/slide3.png" width="759" height="411" alt="Картинка с планетами">
+        <img class="slide-image" src="img/slide3.png" width="759" height="411" alt="Картинка с планетами">
       </div>
-      <nav>
-        <ul class="slider-controls">
+      <nav class="slider-controls">
+        <ul class="slider-controls-list">
           <li><a class="slider-button"></a></li>
           <li><a class="slider-button"></a></li>
           <li><a class="slider-button"></a></li>
@@ -149,52 +145,24 @@
       </ul>
     </section>
 
-    <section class="contact-info">
-      <h2 class="contact-info-title">NЁRDS DESIGN STUDIO</h2>
-      <p class="contact-info-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="contact-info-text">тел. +7 (812) 275-75-75</p>
-      <a class="write-us-button button" href="write-us.html">Напишите нам</a>
-    </section>
-
-    <section class="write-us">
-      <h2>Напишите нам</h2>
-      <form class="write-us-form" action="index.html" method="post">
-        <p>
-          <label class="login" for="user-login">Ваше имя</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="letter">Текст письма</label>
-          <textarea id="letter" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="send-button button" type="submit">
-          Отправить
-        </button>
-      </form>
-      <button class="modal-close" type="button">
-        Закрыть
-      </button>
-    </section>
-
     <section class="map">
+      <div class=" contact-info">
+        <h2 class="contact-info-title">NЁRDS DESIGN STUDIO</h2>
+        <p class="contact-info-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contact-info-text">тел. +7 (812) 275-75-75</p>
+        <a class="write-us-button button" href="write-us.html">Напишите нам</a>
+      </div>
       <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
-      <p>
-        <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        <img src="img/map-marker.png" width="231" height="190" alt="Маркер с логотипом студии Nёrds">
-      </p>
+      <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
 
   </main>
 
-  <footer class="social">
+  <footer class="social container">
     <div class="container">
-      <div class="footer-social">
+      <div>
         <ul class="social-list">
           <li>
             <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип vkontakte"></a>
@@ -207,12 +175,36 @@
           </li>
         </ul>
       </div>
-      <div class="social-friends">
-        <h2 class="social-title">Давайте дружить, это выгодно!</h2>
-        <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-slogan">
+        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
+
+  <section class="write-us">
+    <h2>Напишите нам</h2>
+    <form class="write-us-form" action="index.html" method="post">
+      <p>
+        <label class="login" for="user-login">Ваше имя</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label for="letter">Текст письма</label>
+        <textarea id="letter" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="send-button button" type="submit">
+        Отправить
+      </button>
+    </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+  </section>
 </body>
 
 </html>

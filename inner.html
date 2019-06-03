@@ -36,43 +36,49 @@
 
     <div class="catalog-columns">
       <section class="filters">
-        <h3 class="filter-title">сетка:</h3>
-        <ul class="filters-list">
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label>
-          </li>
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed" disabled><label for="filter-fixed">Фиксированная</label>
-          </li>
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber" disabled><label for="filter-rubber">Резиновая</label>
-          </li>
-        </ul>
+        <form method="get" action="#">
+          <fieldset>
+            <legend class="filter-title">сетка:</legend>
+            <ul class="filters-list">
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed" disabled><label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber" disabled><label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <h3 class="filter-title">особенности:</h3>
-        <ul class="filters-list">
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-baxter-of-california" checked>
-            <label for="filter-slider">Слайдер</label>
-          </li>
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-baxter-of-california">
-            <label for="filter-advantages">Блок преимуществ</label>
-          </li>
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-baxter-of-california" checked>
-            <label for="filter-news">Новости</label>
-          </li>
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-baxter-of-california">
-            <label for="filter-gallery">Галерея</label>
-          </li>
-          <li class="filters-list-item">
-            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-baxter-of-california">
-            <label for="filter-basket">Корзина</label>
-          </li>
-        </ul>
-        <a class="show-button button" href="#">Показать</a>
+          <fieldset>
+            <legend class="filter-title">особенности:</legend>
+            <ul class="filters-list">
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-baxter-of-california" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-baxter-of-california">
+                <label for="filter-advantages">Блок преимуществ</label>
+              </li>
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-baxter-of-california" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-baxter-of-california">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filters-list-item">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-baxter-of-california">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="show-button button">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -137,51 +143,23 @@
       </section>
     </div>
 
-    <section class="contact-info">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
-      <a class="write-us-button button" href="write-us.html">Напишите нам</a>
-    </section>
-
-    <section class="write-us">
-      <h2>Напишите нам</h2>
-      <form class="write-us-form" action="index.html" method="post">
-        <p>
-          <label class="login" for="user-login">Ваше имя</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" required>
-        </p>
-        <p>
-          <label for="letter">Текст письма</label>
-          <textarea id="letter" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="send-button button" type="submit">
-          Отправить
-        </button>
-      </form>
-      <button class="modal-close" type="button">
-        Закрыть
-      </button>
-    </section>
-
     <section class="map">
+      <div class=" contact-info">
+        <h2 class="contact-info-title">NЁRDS DESIGN STUDIO</h2>
+        <p class="contact-info-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contact-info-text">тел. +7 (812) 275-75-75</p>
+        <a class="write-us-button button" href="write-us.html">Напишите нам</a>
+      </div>
       <h2 class="visually-hidden">
         Как до нас добраться
       </h2>
-      <p>
-        <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        <img src="img/map-marker.png" width="231" height="190" alt="Маркер с логотипом студии Nёrds">
-      </p>
+      <img src="img/map.jpg" width="1440" height="416" alt="Офис компании по адресу 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
-
   </main>
-  <footer class="social">
+
+  <footer class="social container">
     <div class="container">
-      <div class="footer-social">
+      <div>
         <ul class="social-list">
           <li>
             <a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Логотип vkontakte"></a>
@@ -194,12 +172,36 @@
           </li>
         </ul>
       </div>
-      <div class="social-friends">
-        <h2 class="social-title">Давайте дружить, это выгодно!</h2>
-        <p class="social-text">Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-slogan">
+        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
   </footer>
+
+  <section class="write-us">
+    <h2>Напишите нам</h2>
+    <form class="write-us-form" action="index.html" method="post">
+      <p>
+        <label class="login" for="user-login">Ваше имя</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label for="letter">Текст письма</label>
+        <textarea id="letter" name="feedback" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="send-button button" type="submit">
+        Отправить
+      </button>
+    </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+  </section>
 </body>
 
 </html>
