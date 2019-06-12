@@ -1,35 +1,3 @@
-body {
-  background: rgba(30, 200, 145, 0.5);
-}
-
-/* body>* { */
-background: rgba(255, 0, 0, 0.5);
-}
-
-body>*>* {
-  background: rgba(50, 500, 45, 0.5);
-}
-
-/* body>*>*>* { */
-background: rgba(25, 0, 100, 0.5);
-}
-
-/* body>*>*>*>* { */
-background: rgba(43, 137, 231, 0.5);
-}
-
-/* body>*>*>*>*>* { */
-background: rgba(231, 43, 231, 0.5);
-}
-
-
-/* body>*>*>*>*>* { */
-background: rgba(246, 243, 49, 0.5);
-}
-
-
-
-
 .main-header {
   background-color: #eeeeee;
 }
@@ -151,7 +119,7 @@ a {
   left: 10px;
   width: 16px;
   height: 18px;
-  background-image: url("C:/Users/MANKAI/Documents/GitHub/977267-nerds-25/img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -280,6 +248,28 @@ slide-bar {
   border-radius: 10%;
 }
 
+.filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  left: 389px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 397px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
@@ -297,7 +287,6 @@ slide-bar {
   margin-top: 17px;
 
 }
-
 
 .partners {
   margin-bottom: 80px;
@@ -326,23 +315,35 @@ slide-bar {
   width: 319px;
   height: 308px;
   background-color: #ffffff;
-  position: absolute;
   justify-content: center;
+  text-align: center;
 }
 
 .map {
-  width: 1440px;
+  position: relative;
+}
+
+.map-inner {
+  padding: 46px 0;
 }
 
 .map-image {
   margin: 0 auto;
   text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: -1;
 
 }
 
 .contact-info-title {
   font-size: 18px;
   line-height: 30px;
+  padding-top: 48px;
+  padding-left: 51px;
+  text-align: left;
 }
 
 .contact-info-text {
@@ -351,7 +352,15 @@ slide-bar {
   color: #666666;
   text-align: left;
   text-transform: none;
+  padding-bottom: 30px;
+  padding-left: 51px;
 }
+
+.contact-info-text:nth-child(2n) {
+  padding-bottom: 0;
+}
+
+
 
 .button {
   display: inline-block;
@@ -459,12 +468,13 @@ slide-bar {
 }
 
 .send-button {
-  width: 219px;
+  width: 260px;
   height: 50px;
   background-color: #fb565a;
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
+  margin-top: 15px;
 }
 
 .footer-title {
@@ -482,30 +492,52 @@ slide-bar {
 }
 
 .write-us {
+  display: none;
+  position: relative;
+  left: 450px;
+  bottom: 714px;
   width: 960px;
   height: 590px;
-}
-
-.write-us-form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.write-us-form input:hover,
-.write-us-form input:focus {
-  border-color: #b4b9bb;
-  color: rgba(68, 68, 68, 0.5);
-}
-
-.write-us-form input:active {
-  color: #444444;
-  border-color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.75);
 }
 
 .write-us-form input:invalid {
   color: #e74246;
-  border: 1px solid #e74246;
-  box-shadow: none;
+  border: 2px solid #e74246;
+}
+
+
+.write-us-form input {
+  border: 2px solid #d7dcde;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-form input:hover {
+  border: 2px solid #b4b9bb;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-form input:focus {
+  border: 2px solid #000000;
+  color: #000000;
+  outline: none;
+}
+
+.write-us-form textarea {
+  border: 2px solid #d7dcde;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-form textarea:hover {
+  border: 2px solid #b4b9bb;
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.write-us-form textarea:focus {
+  border: 2px solid #000000;
+  color: #000000;
+  outline: none;
 }
 
 .page-title {
@@ -561,13 +593,18 @@ slide-bar {
 }
 
 .filters {
-  width: 260px;
+  width: 180px;
 }
 
 .filter fieldset {
   border: none;
 }
 
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 100px
+}
 
 .filter-item {
   margin: 0;
@@ -616,7 +653,7 @@ slide-bar {
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
 
   width: 4px;
@@ -770,7 +807,7 @@ slide-bar {
 }
 
 .browser-bar:hover {
-  background: url("C:/Users/MANKAI/Documents/GitHub/977267-nerds-25/img/browser-bar-dark.png") no-repeat;
+  background-image: url("../img/browser-bar-dark.png");
 }
 
 .pagination-list {
@@ -858,10 +895,12 @@ slide-bar {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  font-family: inherit;
 }
 
 .slide-bar {
   background-color: #eeeeee;
+  position: relative;
 }
 
 .slide-bar-title {
@@ -951,12 +990,24 @@ slide-bar {
   height: 232px;
   text-align: center;
   position: relative;
-  bottom: 257px;
+  bottom: 303px;
   background-color: #eeeeee;
   visibility: hidden;
 }
 
+
+
+.browser-bar-black {
+  position: relative;
+  bottom: 622px;
+  visibility: hidden;
+}
+
 .catalog-item:hover .item-page {
+  visibility: visible;
+}
+
+.catalog-item:hover .browser-bar-black {
   visibility: visible;
 }
 
@@ -974,9 +1025,13 @@ slide-bar {
 }
 
 .write-us-title {
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 45px;
+  line-height: 45px;
   font-weight: medium;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-left: 100px;
+  padding-top: 70px;
 }
 
 .write-us-text {
@@ -996,6 +1051,7 @@ slide-bar {
 .login-icon-user {
   width: 360px;
   height: 50px;
+  border: 1px solid #d7dcde;
 }
 
 .write-us-textarea {
@@ -1010,4 +1066,70 @@ slide-bar {
 
 .input-email {
   padding-left: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  bottom: 488px;
+  left: 846px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  border: 0;
+  background-color: #ffffff;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  top: 10px;
+  left: 2px;
+  background-color: #fecccd;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="email"] {
+  padding-left: 13px;
+}
+
+.write-us-textarea {
+  padding-left: 13px;
+  padding-top: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: ;
+}
+
+
+.services-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+  left: 146px;
+}
+
+
+.services-list {
+  list-style: none;
+}
+
+.catalog-item-title:hover {
+  color: #fc787b;
+}
+
+.catalog-item-title:active {
+  color: #b2b2b2;
 }
