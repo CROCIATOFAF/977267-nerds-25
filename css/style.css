@@ -205,10 +205,10 @@ slide-bar {
 }
 
 .services-list {
+  position: relative;
   font-size: 16px;
   text-transform: none;
   list-style: none;
-  line-height: 24px;
   text-align: left;
   padding: 0;
   margin: 0;
@@ -238,48 +238,6 @@ slide-bar {
   margin: 0px;
 }
 
-.filter-input-checkbox+label::before {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  left: 390px;
-  border: 2px solid #b8b8b8;
-  border-radius: 10%;
-}
-
-.filter-input-checkbox:checked+label::after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 23px;
-  left: 389px;
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.filter-input-radio:checked+label::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 397px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #000000;
-}
-
-.filter-input-radio+label::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  left: 390px;
-  border: 4px solid #b8b8b8;
-  border-radius: 50%;
-}
-
 .studio-stats-text {
   font-size: 16px;
   line-height: 18px;
@@ -289,25 +247,69 @@ slide-bar {
 }
 
 .partners {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
 }
 
 .partners-list {
   display: flex;
   justify-content: space-around;
+  margin: 0;
+  margin-top: 44px;
+  margin-bottom: 44px;
 }
 
 .partners-item {
   list-style: none;
-  opacity: 0.2
+  position: relative;
 }
 
-.partners-item:hover,
-.partners-item:focus {
-  opacity: inherit;
+.htmlacademy-logo {
+  opacity: 0.2;
 }
 
-.partners-item:active {
+.htmlacademy-logo:hover {
+  opacity: 1;
+}
+
+.htmlacademy-logo:active {
+  opacity: 0.1;
+}
+
+.barbershop-logo {
+  opacity: 0.2;
+}
+
+.barbershop-logo:hover {
+  opacity: 1;
+}
+
+.barbershop-logo:active {
+  opacity: 0.1;
+}
+
+.pink-logo {
+  opacity: 0.2;
+}
+
+.pink-logo:hover {
+  opacity: 1;
+}
+
+.pink-logo:active {
+  opacity: 0.1;
+}
+
+.mishka-logo {
+  opacity: 0.2;
+}
+
+.mishka-logo:hover {
+  opacity: 1;
+}
+
+.mishka-logo:active {
   opacity: 0.1;
 }
 
@@ -570,11 +572,24 @@ slide-bar {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .sorting-list {
   width: 360px;
   margin: 0;
+}
+
+.sorting-list::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  border-color: black transparent;
+  border-style: solid;
+  border-width: 11px 10px 0px 10px;
+  height: 0px;
+  width: 0px;
 }
 
 .sorting-title-block {
@@ -593,7 +608,7 @@ slide-bar {
 }
 
 .filters {
-  width: 180px;
+  position: relative;
 }
 
 .filter fieldset {
@@ -1111,6 +1126,10 @@ slide-bar {
   font-weight: ;
 }
 
+.services-list li {
+  list-style: none;
+  position: relative
+}
 
 .services-list li::before {
   content: "";
@@ -1118,12 +1137,8 @@ slide-bar {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  left: 146px;
-}
-
-
-.services-list {
-  list-style: none;
+  left: -37px;
+  top: 11px;
 }
 
 .catalog-item-title:hover {
@@ -1132,4 +1147,94 @@ slide-bar {
 
 .catalog-item-title:active {
   color: #b2b2b2;
+}
+
+.filters-list li {
+  position: relative;
+}
+
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: -35px;
+  top: 7px;
+  border: 2px solid #b8b8b8;
+  border-radius: 10%;
+}
+
+
+.filter-input-checkbox:checked+label::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 19px;
+  left: -35px;
+  top: 7px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked+label::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -27px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b8b8b8;
+}
+
+.filter-input-radio+label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 7px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #b8b8b8;
+  border-radius: 50%;
+}
+
+
+.filter-input-checkbox+label:hover {
+  color: red;
+}
+
+.percent-item {
+  font-size: 26px;
+}
+
+
+.services-list {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding-left: 35px;
+}
+
+.services-list-item {
+  margin-bottom: 24px;
+}
+
+.studio-list-title {
+  margin-bottom: 24px;
+}
+
+.partners-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.partners-item-last::before {
+  display: none;
 }
