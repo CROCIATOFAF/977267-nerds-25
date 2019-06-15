@@ -1,5 +1,6 @@
 .main-header {
   background-color: #eeeeee;
+  padding-top: 49px;
 }
 
 body {
@@ -33,11 +34,9 @@ a {
   color: #000000;
   background-color: #eeeeee;
   align-items: center;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 37px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -91,7 +90,6 @@ a {
 .user-basket-link {
   display: block;
   color: #000000;
-  padding: 25px 20px;
   vertical-align: middle;
 }
 
@@ -107,21 +105,31 @@ a {
   opacity: 0.3;
 }
 
+.site-navigation-link {
+  margin-right: 40px;
+}
+
+.site-navigation-item:last-child .site-navigation-link {
+  margin-right: 0;
+}
+
 .user-basket .user-basket-link {
   position: relative;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 
 .user-basket-link::before {
   content: "";
   position: absolute;
   top: 33px;
-  left: 10px;
+  left: 0px;
   width: 16px;
   height: 18px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 slide-bar {
@@ -149,13 +157,12 @@ slide-bar {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 118px;
-  width: 1100px;
 }
 
 .feature-item {
   width: 300px;
+  margin-right: 100px;
 }
 
 .feature-item-title {
@@ -220,7 +227,6 @@ slide-bar {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-top: 48px;
 }
 
 .studio-numbers-title {
@@ -234,7 +240,7 @@ slide-bar {
 
 .studio-stats-title {
   font-size: 45px;
-  line-height: 10px;
+  line-height: 1.2em;
   margin: 0px;
 }
 
@@ -254,71 +260,41 @@ slide-bar {
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
   margin-top: 44px;
   margin-bottom: 44px;
+  padding: 0;
 }
 
 .partners-item {
   list-style: none;
   position: relative;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.htmlacademy-logo {
+.partners-item-link {
   opacity: 0.2;
 }
 
-.htmlacademy-logo:hover {
+.partners-item-link:hover {
   opacity: 1;
 }
 
-.htmlacademy-logo:active {
-  opacity: 0.1;
-}
-
-.barbershop-logo {
-  opacity: 0.2;
-}
-
-.barbershop-logo:hover {
-  opacity: 1;
-}
-
-.barbershop-logo:active {
-  opacity: 0.1;
-}
-
-.pink-logo {
-  opacity: 0.2;
-}
-
-.pink-logo:hover {
-  opacity: 1;
-}
-
-.pink-logo:active {
-  opacity: 0.1;
-}
-
-.mishka-logo {
-  opacity: 0.2;
-}
-
-.mishka-logo:hover {
-  opacity: 1;
-}
-
-.mishka-logo:active {
+.partners-item-link:active {
   opacity: 0.1;
 }
 
 .contact-info {
-  width: 319px;
-  height: 308px;
+  width: 320px;
   background-color: #ffffff;
   justify-content: center;
-  text-align: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  ;
 }
 
 .map {
@@ -326,7 +302,7 @@ slide-bar {
 }
 
 .map-inner {
-  padding: 46px 0;
+  padding: 97px 0;
 }
 
 .map-image {
@@ -346,6 +322,9 @@ slide-bar {
   padding-top: 48px;
   padding-left: 51px;
   text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
 }
 
 .contact-info-text {
@@ -356,6 +335,7 @@ slide-bar {
   text-transform: none;
   padding-bottom: 30px;
   padding-left: 51px;
+  padding: 0;
 }
 
 .contact-info-text:nth-child(2n) {
@@ -375,6 +355,8 @@ slide-bar {
   padding: 15px 40px 16px;
   border-radius: 2px;
   text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
 }
 
 .button:hover,
@@ -385,6 +367,7 @@ slide-bar {
 .button:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px #c13135;
 }
 
 .green-button {
@@ -399,6 +382,7 @@ slide-bar {
 .green-button:active {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px #009958;
 }
 
 .yellow-button {
@@ -413,12 +397,15 @@ slide-bar {
 .yellow-button:active {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0px #ce961f;
 }
 
 
 .footer {
   display: flex;
   align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .footer .container {
@@ -445,7 +432,6 @@ slide-bar {
 .footer-slogan {
   margin: 0px;
   width: 560px;
-  padding-top: 70px;
 }
 
 .social-button {
@@ -467,6 +453,7 @@ slide-bar {
 .social-button:active {
   background-color: #d7373b;
   color: rgba(227, 115, 118, 0.3);
+  box-shadow: inset 0px 3px 0px #c13135;
 }
 
 .send-button {
@@ -484,6 +471,7 @@ slide-bar {
   line-height: 36px;
   text-transform: none;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 .footer-text {
@@ -491,6 +479,8 @@ slide-bar {
   line-height: 22px;
   color: #444444;
   text-transform: none;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .write-us {
@@ -550,13 +540,14 @@ slide-bar {
   text-align: center;
   background-color: #eeeeee;
   margin: 0;
+  padding-bottom: 110px;
+  padding-top: 73px;
 }
 
 .sort {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  font-weight: regular;
 }
 
 .sorting-title {
@@ -564,6 +555,8 @@ slide-bar {
   line-height: 18px;
   text-transform: uppercase;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting {
@@ -576,26 +569,34 @@ slide-bar {
 }
 
 .sorting-list {
-  width: 360px;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
-.sorting-list::before {
+
+.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0;
+}
+
+.arrow::before {
+  display: inline-block;
+  border: 11px solid #ededed;
+  border-right-width: 6px;
+  border-right-color: transparent;
+  border-left-width: 6px;
+  border-left-color: transparent;
   content: "";
-  position: absolute;
-  top: 10px;
-  right: 50px;
-  border-color: black transparent;
-  border-style: solid;
-  border-width: 11px 10px 0px 10px;
-  height: 0px;
-  width: 0px;
 }
 
-.sorting-title-block {
-  width: 160px;
-  margin: 0;
-  padding: 0;
+.arrow-up::before {
+  border-top-width: 0;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0;
 }
 
 .price-range-title {
@@ -607,12 +608,14 @@ slide-bar {
   padding-top: 18px;
 }
 
-.filters {
-  position: relative;
+.filter {
+  width: 260px;
 }
 
 .filter fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .write-us-form {
@@ -637,6 +640,9 @@ slide-bar {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
+  padding: 0px;
+  margin: 0;
+  padding-top: 53px;
 }
 
 .range-controls {
@@ -670,11 +676,9 @@ slide-bar {
   position: absolute;
   top: 30px;
   left: 0;
-
   width: 4px;
   height: 4px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -721,7 +725,6 @@ slide-bar {
   text-align: right;
 }
 
-
 .filter-title {
   font-weight: bold;
   font-size: 18px;
@@ -732,6 +735,8 @@ slide-bar {
 
 .filter fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters-list {
@@ -742,6 +747,7 @@ slide-bar {
   text-transform: none;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 .filters-list-item {
@@ -781,9 +787,9 @@ slide-bar {
 
 .catalog-item {
   width: 360px;
-  height: 618px;
   margin-bottom: 35px;
   margin-right: 40px;
+  position: relative;
 }
 
 .catalog-list .style {
@@ -818,7 +824,9 @@ slide-bar {
   padding-top: 26px;
   color: #000000;
   font-size: 18px;
+  margin: 0;
   line-height: 30px;
+  padding: 0;
 }
 
 .browser-bar:hover {
@@ -899,11 +907,12 @@ slide-bar {
 .pagination-item-button a:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px #bfbfbf;
 }
 
 .show-button {
   display: inline-block;
-  padding: 15px 90px;
+  padding: 15px 10px;
   border-radius: 2px;
   background-color: #eeeeee;
   color: #000000;
@@ -911,6 +920,7 @@ slide-bar {
   line-height: 18px;
   font-weight: 500;
   font-family: inherit;
+  width: 100%;
 }
 
 .slide-bar {
@@ -969,6 +979,7 @@ slide-bar {
 .pagination-item-button a:active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 3px 0px #bfbfbf;
 }
 
 .slide {
@@ -1002,12 +1013,15 @@ slide-bar {
 }
 
 .item-page {
-  height: 232px;
   text-align: center;
-  position: relative;
-  bottom: 303px;
+  position: absolute;
+  bottom: 0px;
   background-color: #eeeeee;
   visibility: hidden;
+  width: 100%;
+  left: 0;
+  padding: 47px;
+  box-sizing: border-box;
 }
 
 
@@ -1128,7 +1142,8 @@ slide-bar {
 
 .services-list li {
   list-style: none;
-  position: relative
+  position: relative;
+  padding-left: 37px;
 }
 
 .services-list li::before {
@@ -1137,7 +1152,7 @@ slide-bar {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  left: -37px;
+  left: 0px;
   top: 11px;
 }
 
@@ -1151,17 +1166,17 @@ slide-bar {
 
 .filters-list li {
   position: relative;
+  padding-left: 36px;
 }
-
 
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   width: 19px;
   height: 19px;
-  left: -35px;
+  left: 0;
   top: 7px;
-  border: 2px solid #b8b8b8;
+  border: 2px solid #000000;
   border-radius: 10%;
 }
 
@@ -1171,7 +1186,7 @@ slide-bar {
   position: absolute;
   width: 27px;
   height: 19px;
-  left: -35px;
+  left: 0;
   top: 7px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -1182,27 +1197,22 @@ slide-bar {
   content: "";
   position: absolute;
   top: 15px;
-  left: -27px;
+  left: 8px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #b8b8b8;
+  background-color: #4d4d4d;
 }
 
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: 0px;
   top: 7px;
   width: 18px;
   height: 18px;
-  border: 4px solid #b8b8b8;
+  border: 4px solid #4d4d4d;
   border-radius: 50%;
-}
-
-
-.filter-input-checkbox+label:hover {
-  color: red;
 }
 
 .percent-item {
@@ -1214,7 +1224,7 @@ slide-bar {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  padding-left: 35px;
+  padding: 0;
 }
 
 .services-list-item {
@@ -1229,12 +1239,34 @@ slide-bar {
   content: "";
   position: absolute;
   top: 10px;
-  left: 250px;
+  right: 0;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.partners-item-last::before {
+.partners-item:last-child::before {
   display: none;
+}
+
+.label-style {
+  opacity: 0.4;
+}
+
+.label-style:hover {
+  opacity: 1;
+}
+
+.label-style:active {
+  opacity: 0.3;
+}
+
+.label-style:disabled {
+  opacity: 0;
+}
+
+.site-navigation-item:last-child .site-navigation-link {
+  margin-right: 0;
 }
