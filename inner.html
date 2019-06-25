@@ -51,7 +51,7 @@
         </fieldset>
         <form class="filter" method="post" action="#">
           <fieldset>
-            <legend class="filter-title">сетка:</legend>
+            <legend class="filter-title title-radio-buttons">сетка:</legend>
             <ul class="filters-list">
               <li class="filters-list-item">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
@@ -69,7 +69,7 @@
           </fieldset>
 
           <fieldset>
-            <legend class="filter-title">особенности:</legend>
+            <legend class="filter-title title-checkboxes">особенности:</legend>
             <ul class="filters-list">
               <li class="filters-list-item">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -100,7 +100,7 @@
           <div class="sorting">
             <h3 class="sorting-title">Сортировать:</h3>
             <div class="sorting-list">
-              <a href="#" class="sort active">по цене</a>
+              <a href="#" class="sort sort-active">по цене</a>
               <a href="#" class="sort">по типу</a>
               <a href="#" class="sort">по названию</a>
               <a href="#" class="arrow arrow-down">по убыванию</a>
@@ -111,17 +111,15 @@
           <h2 class="visually-hidden">список готовых шаблонов</h2>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <img src="img/img-sedona.jpg" width="360" height="615" alt="шаблон «sedona»">
-              <div>
-                <div class="item-page">
-                  <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-sedona.html">SEDONA</a></h3>
-                  <p class="catalog-item-text">Информационный сайт<br> для туристов</p>
-                  <a class="price-button button" href="#">9 900 РУБ.</a>
-                </div>
+              <img class="item-image" src="img/img-sedona.jpg" width="360" height="576" alt="шаблон «sedona»">
+              <div class="item-page">
+                <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-sedona.html">SEDONA</a></h3>
+                <p class="catalog-item-text">Информационный сайт<br> для туристов</p>
+                <a class="price-button button" href="#">9 900 РУБ.</a>
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img/img-pink.jpg" width="360" height="615" alt="шаблон «pink»">
+              <img class="item-image" src="img/img-pink.jpg" width="360" height="576" alt="шаблон «pink»">
               <div class="item-page">
                 <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-pink-app.html">PINK APP</a></h3>
                 <p class="catalog-item-text">Продуктовый лендинг<br> приложения для IOS и Android</p>
@@ -129,7 +127,7 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img/img-barbershop.jpg" width="360" height="615" alt="шаблон «borodinski»">
+              <img class="item-image" src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон «borodinski»">
               <div class="item-page">
                 <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-barbershop.html">BARBERSHOP</a></h3>
                 <p class="catalog-item-text">Сайт салона красоты. <br> Для мужчин, да.</p>
@@ -137,7 +135,7 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img/img-mishka.jpg" width="360" height="615" alt="шаблон «mishka»">
+              <img class="item-image" src="img/img-mishka.jpg" width="360" height="576" alt="шаблон «mishka»">
               <div class="item-page">
                 <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-mishka.html">MISHKA</a></h3>
                 <p class="catalog-item-text">Интернет-магазин<br> вязаных игрушек</p>
@@ -145,7 +143,7 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img/img-aplus.jpg" width="360" height="615" alt="шаблон «a plus»">
+              <img class="item-image" src="img/img-aplus.jpg" width="360" height="576" alt="шаблон «a plus»">
               <div class="item-page">
                 <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-a-plus.html">A PLUS</a></h3>
                 <p class="catalog-item-text">Лендинг курсов повышения<br> квалификации</p>
@@ -153,7 +151,7 @@
               </div>
             </li>
             <li class="catalog-item">
-              <img src="img/img-kvast.jpg" width="360" height="615" alt="шаблон «кваст»">
+              <img class="item-image" src="img/img-kvast.jpg" width="360" height="576" alt="шаблон «кваст»">
               <div class="item-page">
                 <h3 class="catalog-item-title"><a class="catalog-item-title-link" href="product-kvast.html">Кваст</a></h3>
                 <p class="catalog-item-text">Промо-сайт производителя <br> крафтового кваса</p>
@@ -176,7 +174,7 @@
     <div class="container map-inner">
       <div class=" contact-info">
         <h2 class="contact-info-title">NЁRDS DESIGN STUDIO</h2>
-        <p class="contact-info-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contact-info-text">191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
         <p class="contact-info-text">тел. +7 (812) 275-75-75</p>
         <a class="write-us-button button" href="write-us.html">Напишите нам</a>
       </div>
@@ -228,6 +226,8 @@
       Закрыть
     </button>
   </section>
+
+  <script src="js/modal-window.js"></script>
 </body>
 
 </html>
