@@ -84,6 +84,8 @@ a {
   margin-top: 12px;
   margin-right: 46px;
   max-width: 730px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -517,6 +519,7 @@ a {
   border-radius: 50%;
   background-color: #e1e1e1;
   color: #ffffff;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -962,6 +965,7 @@ a {
   align-items: center;
   margin-top: 28px;
   margin-bottom: 60px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -1784,6 +1788,8 @@ a {
   height: 25px;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-image: url("../img/radio-off.svg");
   opacity: 0.4;
@@ -1801,6 +1807,8 @@ a {
   height: 25px;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-image: url("../img/radio-on.svg");
   opacity: 0.4;
@@ -1819,6 +1827,8 @@ a {
   height: 23px;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-image: url("../img/checkbox-off.svg");
   opacity: 0.4;
@@ -1842,6 +1852,8 @@ a {
   height: 23px;
   left: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-image: url("../img/checkbox-on.svg");
   opacity: 0.4;
