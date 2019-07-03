@@ -320,7 +320,9 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 46px 50px;
+  padding: 0 50px;
+  padding-top: 50px;
+  padding-bottom: 46px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 1;
@@ -371,7 +373,7 @@ a {
   text-align: left;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px
+  margin-bottom: 23px
 }
 
 .contact-info-text {
@@ -453,7 +455,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 67px;
+  padding-top: 69px;
   padding-bottom: 70px
 }
 
@@ -469,7 +471,6 @@ a {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -477,7 +478,9 @@ a {
   -ms-flex-align: center;
   align-items: center;
   width: 260px;
-  margin-right: 140px
+  margin-right: 139px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .footer-social {
@@ -487,7 +490,8 @@ a {
 }
 
 .footer-slogan {
-  margin: 0
+  margin: 0;
+  margin-bottom: 9px
 }
 
 .social-button {
@@ -1824,4 +1828,13 @@ input:disabled~.checkbox-icon {
 
 input:disabled~.radio-button-icon {
   opacity: .1
+}
+
+.social-list-item {
+  margin-right: 11px;
+  margin-bottom: 10px
+}
+
+.social-list-item:nth-child(3n) {
+  margin-right: 0
 }
